@@ -1,10 +1,10 @@
-# 🔐 FreeIPA + Snipe-IT LDAP Integration Lab
+#  FreeIPA + Snipe-IT LDAP Integration Lab
 
-> **Enterprise IAM + Asset Management Integration** — A hands-on homelab project demonstrating centralized identity management with LDAP authentication using FreeIPA and Snipe-IT inside a Proxmox virtualized environment.
+> Enterprise IAM + Asset Management Integration** — A hands-on homelab project demonstrating centralized identity management with LDAP authentication using FreeIPA and Snipe-IT inside a Proxmox virtualized environment.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates a real-world **LDAP integration** between:
 - **FreeIPA** — Centralized Identity Management Server (LDAP + DNS + Kerberos)
@@ -19,7 +19,7 @@ This project demonstrates a real-world **LDAP integration** between:
 
 ---
 
-## 🏗️ Lab Architecture
+## Lab Architecture
 
 ```
 Proxmox Host
@@ -51,7 +51,7 @@ Proxmox Host
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 freeipa-snipeit-ldap-lab/
@@ -79,7 +79,7 @@ freeipa-snipeit-ldap-lab/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Proxmox VE host
@@ -109,7 +109,7 @@ sudo bash scripts/ldap-test.sh
 
 ---
 
-## 🔧 Configuration Summary
+##  Configuration Summary
 
 ### FreeIPA LDAP Details
 | Parameter | Value |
@@ -134,7 +134,7 @@ sudo bash scripts/ldap-test.sh
 
 ---
 
-## 🚨 Issues Faced & Fixes
+##  Issues Faced & Fixes
 
 | # | Issue | Root Cause | Fix |
 |---|---|---|---|
@@ -148,38 +148,15 @@ sudo bash scripts/ldap-test.sh
 
 ---
 
-## ✅ Final Results
+##  Final Results
 
-- ✅ DNS resolution working inside Docker container
-- ✅ LDAP port 389 reachable from container
-- ✅ Successful bind to FreeIPA LDAP
-- ✅ LDAP user synchronization working in Snipe-IT
-- ✅ Enterprise-style IAM lab fully functional
+-  DNS resolution working inside Docker container
+-  LDAP port 389 reachable from container
+-  Successful bind to FreeIPA LDAP
+-  LDAP user synchronization working in Snipe-IT
+-  Enterprise-style IAM lab fully functional
 
----
-
-## 📊 Skills Demonstrated
-
-- Linux System Administration
-- Identity & Access Management (IAM)
-- LDAP Protocol Configuration
-- Docker & Container Troubleshooting
-- DNS Debugging
-- Network Troubleshooting (ping, nc, ss)
-- Certificate Handling (OpenSSL, update-ca-certificates)
-- Real-world Production Debugging
-- Root Cause Analysis
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Configure LDAPS (port 636) with proper CA trust chain
-- [ ] Integrate with Active Directory (AD)
-- [ ] Enable MFA in FreeIPA using TOTP
-- [ ] Automate full deployment using Ansible
-- [ ] Add Nginx reverse proxy with SSL termination
-- [ ] Add monitoring with Prometheus + Grafana
+--
 
 ---
 
@@ -193,21 +170,13 @@ Suggested screenshots to add:
 - Successful LDAP sync result
 - `ldapsearch` terminal output
 - Docker container status (`docker ps`)
+---
+
+##  Author
+
+Mangesh Mundhava
+- LinkedIn: www.linkedin.com/in/mangesh-mundhava-ab494a300
 
 ---
 
-## 📄 License
-
-MIT License — feel free to use this as a reference for your own homelab.
-
----
-
-## 👤 Author
-
-**Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
-
----
-
-> ⭐ If this helped you, please star the repo!
+>  If this helped you, please star the repo!
