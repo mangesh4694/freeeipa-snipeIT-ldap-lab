@@ -35,7 +35,7 @@ Proxmox Host
 
 ---
 
-## 🖥️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -123,10 +123,10 @@ sudo bash scripts/ldap-test.sh
 ### Snipe-IT LDAP Settings (UI)
 | Field | Value |
 |---|---|
-| LDAP Server | `ipa.theonetech.lab` |
+| LDAP Server | `domain` |
 | Port | `389` |
-| Base DN | `dc=theonetech,dc=lab` |
-| Bind Username | `uid=admin,cn=users,cn=accounts,dc=theonetech,dc=lab` |
+| Base DN | `dc=domain,dc=lab` |
+| Bind Username | `uid=admin,cn=users,cn=accounts,dc=domain,dc=lab` |
 | Username Field | `uid` |
 | Last Name Field | `sn` |
 | First Name Field | `givenName` |
@@ -160,7 +160,7 @@ sudo bash scripts/ldap-test.sh
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 See the [screenshots/](screenshots/) folder.
 
