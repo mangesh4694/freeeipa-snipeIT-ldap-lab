@@ -1,0 +1,39 @@
+# =============================================================================
+# /etc/hosts Reference — FreeIPA + Snipe-IT Lab
+# =============================================================================
+# Add the following entries to /etc/hosts on:
+#   1. VM2 (Docker Host)
+#   2. Any client machine accessing the lab
+#
+# DO NOT add these to the FreeIPA server itself — it has its own DNS.
+# =============================================================================
+
+# FreeIPA Server
+192.168.1.10    ipa.theonetech.lab    ipa
+
+# Docker Host (Snipe-IT)
+192.168.1.20    docker.theonetech.lab    docker
+
+# =============================================================================
+# HOW TO APPLY:
+#
+#   sudo bash -c 'echo "192.168.1.10 ipa.theonetech.lab" >> /etc/hosts'
+#   sudo bash -c 'echo "192.168.1.20 docker.theonetech.lab" >> /etc/hosts'
+#
+# VERIFY:
+#   getent hosts ipa.theonetech.lab
+#   ping ipa.theonetech.lab
+# =============================================================================
+
+# =============================================================================
+# DOCKER CONTAINER FIX:
+# To ensure the Snipe-IT container resolves FreeIPA, use --add-host at run:
+#
+#   docker run -d \
+#     --add-host=ipa.theonetech.lab:192.168.1.10 \
+#     ...
+#
+# Or in docker-compose.yml under the service:
+#   extra_hosts:
+#     - "ipa.theonetech.lab:192.168.1.10"
+# =============================================================================

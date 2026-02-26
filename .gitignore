@@ -1,0 +1,44 @@
+# =============================================================================
+# .gitignore — FreeIPA + Snipe-IT LDAP Lab
+# =============================================================================
+
+# ─── Environment / Secrets ──────────────────────────
+.env
+*.env.local
+*.env.production
+secrets/
+passwords.txt
+
+# ─── OS Files ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── Logs ───────────────────────────────────────────
+*.log
+logs/
+
+# ─── Editor / IDE ───────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Certificates & Keys ────────────────────────────
+# Keep .crt files tracked if they're public CA certs
+# But never track private keys
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ─── Docker ─────────────────────────────────────────
+# Don't track generated docker volumes or overrides
+docker-compose.override.yml
+
+# ─── Temp Files ─────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
